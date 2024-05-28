@@ -1,13 +1,3 @@
-### Some instructions
-# docker pull rocker/geospatial # get image
-# touch Dockerfile # create docker file
-# docker run -it rocker/geospatial sh # test things interactively in the docker
-# docker build -t simbinomialsdm . # build docker image with app (use lower case)
-# docker run -p 8180:8180 simbinomialsdm # run app from docker
-# docker images # list images
-# docker image # list processes
-# docker image rm -f 812a84f022b2 # remove image by ID or name
-
 
 # Base R Shiny image
 FROM rocker/geospatial
