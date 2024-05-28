@@ -9,6 +9,10 @@ library(mgcv)
 library(shinyjs)
 library(shinycssloaders)
 
+# Specify the application port
+options(shiny.host = "0.0.0.0")
+options(shiny.port = 8180)
+
 # Define UI
 ui <- fluidPage(
   tags$head(
@@ -29,7 +33,7 @@ ui <- fluidPage(
       }"
       ))
   ),
-  titlePanel("Simulate a binomial data surface from predictors and effort and find back with a spatial model"),
+  titlePanel("Simulate a binomial data surface from predictors and effort and find back with a purely spatial model"),
   sidebarLayout(
     sidebarPanel(
       h3("Simulation Grid"),
