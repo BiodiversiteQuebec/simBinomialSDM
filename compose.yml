@@ -1,0 +1,6 @@
+services:
+  shiny:
+    build: .
+    restart: always
+    ports:
+      - "8180:8180"
